@@ -8,7 +8,7 @@
         Title="Calculator" Height="600" Width="415" ResizeMode="NoResize">
     <Canvas>
         <Canvas Canvas.Top="0" Canvas.Left="0" Height="200" Width="400" Background="DimGray">
-            <Label Canvas.Right="0" Canvas.Top="100" Content="0"/>
+            <Label x:Name="view_answer_label" Canvas.Right="0" Canvas.Top="100" Content="0"/>
         </Canvas>
         
         <Grid Canvas.Bottom="0" Canvas.Left="0" Height="400" Width="400" Background="Black">
@@ -28,27 +28,27 @@
             </Grid.ColumnDefinitions>
 
             <!--Кнопки верхнего слоя-->
-            <Button Grid.Column="0" Grid.Row="0" Content="+"/>
-            <Button Grid.Column="1" Grid.Row="0" Content="-"/>
-            <Button Grid.Column="2" Grid.Row="0" Content="x"/>
-            <Button Grid.Column="3" Grid.Row="0" Content="%"/>
+            <Button Grid.Column="0" Grid.Row="0" Content="+" Click="Button_Click_Plus"/>
+            <Button Grid.Column="1" Grid.Row="0" Content="-" Click="Button_Click_Minus"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="x" Click="Button_Click_Multiplication"/>
+            <Button Grid.Column="3" Grid.Row="0" Content="%" Click="Button_Click_Percent"/>
 
             <!--Кнопки цифр-->
-            <Button Grid.Column="0" Grid.Row="1" Content="7"/>
-            <Button Grid.Column="1" Grid.Row="1" Content="8"/>
-            <Button Grid.Column="2" Grid.Row="1" Content="9"/>
-            <Button Grid.Column="0" Grid.Row="2" Content="4"/>
-            <Button Grid.Column="1" Grid.Row="2" Content="5"/>
-            <Button Grid.Column="2" Grid.Row="2" Content="6"/>
-            <Button Grid.Column="0" Grid.Row="3" Content="1"/>
-            <Button Grid.Column="1" Grid.Row="3" Content="2"/>
-            <Button Grid.Column="2" Grid.Row="3" Content="3"/>
-            <Button Grid.Column="0" Grid.Row="4" Content="1"/>
-            <Button Grid.Column="1" Grid.Row="4" Content="2"/>
-            <Button Grid.Column="2" Grid.Row="4" Content="3"/>
+            <Button Grid.Column="0" Grid.Row="1" Content="7" Click="Button_Click_Seven"/>
+            <Button Grid.Column="1" Grid.Row="1" Content="8" Click="Button_Click_Eight"/>
+            <Button Grid.Column="2" Grid.Row="1" Content="9" Click="Button_Click_Nine"/>
+            <Button Grid.Column="0" Grid.Row="2" Content="4" Click="Button_Click_Four"/>
+            <Button Grid.Column="1" Grid.Row="2" Content="5" Click="Button_Click_Five"/>
+            <Button Grid.Column="2" Grid.Row="2" Content="6" Click="Button_Click_Six"/>
+            <Button Grid.Column="0" Grid.Row="3" Content="1" Click="Button_Click_One"/>
+            <Button Grid.Column="1" Grid.Row="3" Content="2" Click="Button_Click_Two"/>
+            <Button Grid.Column="2" Grid.Row="3" Content="3" Click="Button_Click_Three"/>
+            <Button Grid.Column="0" Grid.Row="4" Content="0" Click="Button_Click_Zero"/>
+            <Button Grid.Column="1" Grid.Row="4" Content="." Click="Button_Click_Dot"/>
+            <Button Grid.Column="2" Grid.Row="4" Content="AC" Click="Button_Click_Clear_All"/>
 
             <!--Объединение 3 строк для одной кнопки-->
-            <Button Grid.Column="3" Grid.Row="1" Content="=" Grid.RowSpan="4"/>
+            <Button Grid.Column="3" Grid.Row="1" Content="=" Grid.RowSpan="4" Click="Button_Click_Get_Answer"/>
         </Grid>
     </Canvas>
 </Window>
