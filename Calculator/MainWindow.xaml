@@ -29,11 +29,10 @@
             <Button Grid.Column="2" Grid.Row="0" Content="x"/>
             <Button Grid.Column="3" Grid.Row="0" Content="%"/>
 
+            <!--Кнопки цифр-->
             <Button Grid.Column="0" Grid.Row="1" Content="7"/>
             <Button Grid.Column="1" Grid.Row="1" Content="8"/>
             <Button Grid.Column="2" Grid.Row="1" Content="9"/>
-
-            <!--Кнопки цифр-->
             <Button Grid.Column="0" Grid.Row="2" Content="4"/>
             <Button Grid.Column="1" Grid.Row="2" Content="5"/>
             <Button Grid.Column="2" Grid.Row="2" Content="6"/>
