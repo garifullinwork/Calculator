@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Calculator" Height="600" Width="400" ResizeMode="NoResize">
+        Title="Calculator" Height="600" Width="415" ResizeMode="NoResize">
     <Canvas>
+        <Canvas Canvas.Top="0" Canvas.Left="0" Height="200" Width="400" Background="DimGray">
+            <Label Canvas.Right="0" Canvas.Top="100" Content="0"/>
+        </Canvas>
+        
         <Grid Canvas.Bottom="0" Canvas.Left="0" Height="400" Width="400" Background="Black">
             <!--Разметка столбцов и строк--> 
             <Grid.RowDefinitions>
